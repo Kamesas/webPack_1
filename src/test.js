@@ -3,7 +3,7 @@ function sum(a, b) {
 }
 
 function sumAlert(c, d) {
-  alert(sum(c, d));
+  console.log("func sum --- ", sum(c, d));
 }
 
 export default sumAlert;
