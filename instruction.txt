@@ -3,7 +3,8 @@
 3. npm i webpack-cli --save-dev
 4.  "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "webpack"
+    "build": "webpack --mode production"
   },
 5. add folder src and index.js
-6. 
+6. "build": "webpack --mode production" || "build": "--mode development"
+7. npm i webpack-dev-server --save-dev ("dev": "webpack-dev-server --mode development")
