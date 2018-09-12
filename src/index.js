@@ -15,3 +15,5 @@ function testFunc() {
 testFunc();
 
 sum(2, 10);
+
+import "./css/style.css";
