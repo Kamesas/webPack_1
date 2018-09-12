@@ -9,3 +9,5 @@
 6. "build": "webpack --mode production" || "build": "--mode development"
 7. npm i webpack-dev-server --save-dev ("dev": "webpack-dev-server --mode development")
 8. npm install babel-loader babel-core babel-preset-env babel-preset-stage-3 --save-dev (https://github.com/babel/babel/issues/8599)
+9. npm i style-loader css-loader --save-dev
+10. npm i extract-text-webpack-plugin@next
