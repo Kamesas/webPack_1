@@ -9,7 +9,20 @@ let conf = {
   },
   devServer: {
     overlay: true
+  },
+  module: {
+    rules: [
+      {
+        test: /\.js$/,
+        loader: "babel-loader"
+      }
+    ]
   }
 };
 
-module.exports = conf;
+module.exports = (env, options) => {
+  let producnion = options.mode === "production";
+
+  conf.devtool = producnion ? "source-map" : "eval-sourcemap";
+  return conf;
+};
