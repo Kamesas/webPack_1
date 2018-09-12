@@ -18,10 +18,11 @@ let conf = {
         loader: "babel-loader"
       },
       {
-        test: /\.css$/,
+        //test: /\.scss$/,
+        test: /\.(sa|sc|c)ss$/,
         use: ExtractTextPlugin.extract({
           fallback: "style-loader",
-          use: "css-loader"
+          use: ["css-loader", "sass-loader"]
         })
       }
     ]

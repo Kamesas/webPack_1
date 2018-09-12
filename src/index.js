@@ -14,6 +14,6 @@ function testFunc() {
 
 testFunc();
 
-sum(2, 10);
+sum(3, 10);
 
-import "./css/style.css";
+import "./css/style.sass";
