@@ -1,3 +1,9 @@
 1. npm i (создаем package.json)
 2. npm i webpack --save-dev
 3. npm i webpack-cli --save-dev
+4.  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack"
+  },
+5. add folder src and index.js
+6. 
