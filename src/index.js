@@ -1,19 +1,4 @@
-import sum from "./test";
-import $ from "jquery";
-
-$("#h1")
-  .text("jQuery test")
-  .css({ color: "red", fontSize: 12 });
-console.log("test run dev");
-
-const af = "arrow func";
-
-function testFunc() {
-  console.log(af);
-}
-
-testFunc();
-
-sum(3, 10);
+//import sum from "./test";
+//import $ from "jquery";
 
 import "./css/style.sass";
