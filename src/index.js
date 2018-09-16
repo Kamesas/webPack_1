@@ -1,11 +1,5 @@
 "use strict";
-let buttons = document.querySelectorAll(".buttonsForLet button");
+import "./js/let";
+import "./js/const";
 
-for (let i = 0; i < buttons.length; i++) {
-  const button = buttons[i];
-
-  button.innerText = i + 1;
-  button.onclick = function() {
-    console.log(i);
-  };
-}
+import "./css/style.sass";
