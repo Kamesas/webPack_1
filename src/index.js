@@ -1,4 +1,11 @@
-//import sum from "./test";
-//import $ from "jquery";
+"use strict";
+let buttons = document.querySelectorAll(".buttonsForLet button");
 
-import "./css/style.sass";
+for (let i = 0; i < buttons.length; i++) {
+  const button = buttons[i];
+
+  button.innerText = i + 1;
+  button.onclick = function() {
+    console.log(i);
+  };
+}
