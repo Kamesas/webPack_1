@@ -1,29 +1,32 @@
-function greet(name) {
-  console.log(`Hello ${name}`.toUpperCase());
-}
+const template = document.querySelector(".template button");
+const templateP = document.querySelector(".template p");
 
-greet("Bill");
+template.onclick = function() {
+  greet("Bill");
+  createEmail("john@mail.com", "jane@mail.com", "Hello", "How are you doing?");
+  add("5", "7");
+};
+
+function greet(name) {
+  templateP.innerHTML = `Hello ${name}`.toUpperCase();
+}
 
 function createEmail(to, from, subject, message) {
-  console.log(`
-      To: ${to}
-      From: ${from}
-      Subject: ${subject}
-      Message: ${message}
-  `);
+  templateP.innerHTML += `
+                          <div>To: ${to}</div>
+                         <div> From: ${from}</div>
+                         <div> Subject: ${subject}</div>
+                          <div>Message: ${message}</div>
+                        `;
 }
-
-createEmail("john@mail.com", "jane@mail.com", "Hello", "How are you doing?");
 
 function add(x, y) {
-  console.log(`${x} + ${y} = ${parseInt(x) + parseInt(y)}`);
+  templateP.innerHTML += `${x} + ${y} = ${parseInt(x) + parseInt(y)}`;
 }
 
-add("5", "7");
+let name = "Bill";
+templateP.innerHTML += upperName`Hello ${name} test`;
 
-// let name = "Bill";
-// console.log(upperName`Hello ${name}`);
-
-// function upperName(literals, ...values) {
-//   return literals[0] + value.toUpperCase();
-// }
+function upperName(literals, value) {
+  return literals[0] + value.toUpperCase() + literals[1];
+}
