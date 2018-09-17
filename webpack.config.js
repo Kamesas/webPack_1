@@ -25,6 +25,11 @@ let conf = {
           use: ["css-loader", "sass-loader"]
         })
       }
+      // {
+      //   test: /\.html$/,
+      //   include: path.resolve(__dirname, 'src/html/includes'),
+      //   use: ['raw-loader']
+      // },
     ]
   },
   plugins: [new ExtractTextPlugin("styles.css")]

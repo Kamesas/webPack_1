@@ -5,6 +5,6 @@ for (let i = 0; i < buttons.length; i++) {
 
   button.innerText = i + 1;
   button.onclick = function() {
-    console.log(i);
+    this.innerHTML = i;
   };
 }
